@@ -1,0 +1,47 @@
+import pandas as pd
+
+data = {
+    "label": [
+        "ham", "spam", "ham", "spam", "ham", "spam", "ham", "spam",
+        "ham", "spam", "ham", "spam", "ham", "spam", "ham", "spam",
+        "ham", "spam", "ham", "spam", "ham", "spam", "ham", "spam",
+        "ham", "spam", "ham", "spam", "ham", "spam", "ham", "spam"
+    ],
+    "text": [
+        "I'm going to the store. Do you need anything?",
+        "Congratulations! You've won a free ticket to the Bahamas! Click here to claim.",
+        "Are you coming to the party tomorrow night?",
+        "Get cheap meds online without a prescription. Visit our site now!",
+        "Let's have lunch together sometime next week.",
+        "Win a $1000 gift card now by just entering your details!",
+        "Can you send me the report by end of the day?",
+        "Lowest price for the best vacations. Book now!",
+        "I'll call you when I get home.",
+        "You have been selected for a special prize. Claim now!",
+        "Don't forget to pick up the dry cleaning.",
+        "Exclusive offer just for you! Save 50% on your next purchase.",
+        "Meeting is scheduled for 10 AM tomorrow.",
+        "Earn money from home without any investment! Sign up today.",
+        "Did you finish the homework for tomorrow?",
+        "You have an urgent message waiting for you. Check it out!",
+        "Happy birthday! Hope you have a wonderful day.",
+        "Your account has been compromised. Verify your identity now.",
+        "I'll be late to the meeting, stuck in traffic.",
+        "This is your last chance to save on our exclusive deals.",
+        "Can we reschedule our meeting to next week?",
+        "You have won a free cruise to the Caribbean. Act now!",
+        "Please review the attached document before our call.",
+        "Limited time offer! Get two for the price of one.",
+        "Looking forward to our dinner tonight.",
+        "Claim your free lottery ticket before it expires.",
+        "Thanks for your help with the project.",
+        "You've been pre-approved for a $5000 loan. Apply now!",
+        "Don't forget about our meeting at 3 PM.",
+        "Your credit score is too low. Fix it here.",
+        "I'll send you the details in an email.",
+        "Congratulations, you have won a new car! Click to claim."
+    ]
+}
+
+df = pd.DataFrame(data)
+df.to_csv('spam_ham.csv', index=False)
